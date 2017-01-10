@@ -25,3 +25,5 @@ $ node main.js --help
 
     $ node main.js -d D:\PG\git\HiP-Forms directions car
 ```
+
+Make sure that you add the copied icons to the Visual Studio project as [described here](https://blogs.msdn.microsoft.com/davidklinems/2007/12/18/quick-tip-add-files-to-visual-studio-projects-the-easy-way/).
