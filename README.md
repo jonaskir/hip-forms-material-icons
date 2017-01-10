@@ -20,4 +20,8 @@ $ node main.js --help
     -d, --dir <dir>      Specify the project directory.
     -c, --color <color>  Optional: Specify the color of the icon ("black" | "white")
     -s, --size <n>       Optional: Specify the size of the icon in dp (18 | 24 | 36 | 48)
+
+  Example:
+
+    $ node main.js -d D:\PG\git\HiP-Forms directions car
 ```
