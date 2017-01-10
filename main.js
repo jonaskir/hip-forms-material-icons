@@ -17,7 +17,7 @@ program
 program.on('--help', () => {
   console.log('  Example:');
   console.log('');
-  console.log('    $ node main.js "directions car"');
+  console.log('    $ node main.js -d D:\PG\git\HiP-Forms directions car');
   console.log('');
 });
 
