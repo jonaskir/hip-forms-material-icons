@@ -1,0 +1,15 @@
+{
+  "name": "material-icons-script",
+  "version": "1.0.0",
+  "description": "Automatically fetches Material Icons and adds them to the HiP-Forms project.",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jonas Kirchhoff",
+  "license": "MIT",
+  "dependencies": {
+    "unzipper": "^0.7.3"
+  }
+}
