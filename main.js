@@ -11,15 +11,22 @@ program
   .usage('[options] "<Material Icon Name>"')
   .option('-d, --dir <dir>', 'Specify the project directory.')
   .option('-c, --color <color>', 'Optional: Specify the color of the icon ("black" | "white")', /^(black|white)$/i, 'black')
-  .option('-s, --size <n>', 'Optional: Specify the size of the icon in dp (18 | 24 | 36 | 48)', 24)
-  .parse(process.argv);
+  .option('-s, --size <n>', 'Optional: Specify the size of the icon in dp (18 | 24 | 36 | 48)', 24);
 
-program.on('--help', () => {
+program.on('--help', function () {
   console.log('  Example:');
   console.log('');
-  console.log('    $ node main.js -d D:\PG\git\HiP-Forms directions car');
+  console.log('    $ node main.js -d D:\\PG\\git\\HiP-Forms directions car');
   console.log('');
 });
+
+program.parse(process.argv);
+
+// terminate if no HiP-Forms directory is specified.
+if (!process.dir || process.dir.length <= 0) {
+  console.error('ERROR! You need to specify the HiP-Forms directory!');
+  process.exit(1)
+}
 
 // constants
 const baseUrl = 'https://storage.googleapis.com/material-icons/external-assets/v4/icons/zip/';
